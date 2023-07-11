@@ -4,14 +4,15 @@
       <label>Task:</label>
           <input type="text" placeholder="Enter your task" maxlength="60" formControlName="title">
           <small *ngIf="form.controls['title'].invalid && !form.controls['title'].pristine">3~50 characters!</small>
-      <button>Add</button>
+      <button [disabled]="form.invalid" (click)="add()">Add</button>
   </fieldset>
 </form>
 
 <ul>
+  <p *ngIf="todos.length==0"><small>No tasks yet!</small></p>
   <li *ngFor="let todo of todos">
-    {{ todo.id }} _ {{ todo.task }} | 
-    <button *ngIf="!todo.done" (click)="markAsDone(todo)">DONE</button> | 
+    {{ todo.id }} . {{ todo.task }} | 
+    <button *ngIf="!todo.done" (click)="markAsDone(todo)">DONE</button>  
     <button *ngIf="todo.done" (click)="markAsUndone(todo)">REMAKE</button> | 
     <button (click)="remove(todo)">REMOVE</button></li>
 </ul>
