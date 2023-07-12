@@ -9,9 +9,9 @@ import { Todo } from 'src/models/todo.models';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularTest';
+  public mode = 'list'
   public todos: Todo[] = [];
-  public titule: String = 'My daily tasks'
+  public title: String = 'My daily tasks'
   public form: FormGroup;
   
 
@@ -40,11 +40,6 @@ export class AppComponent {
 
   }
 
-
-  otherTitle() {
-    this.titule = 'Completed'
-  }
-
   remove(todo: Todo) {
       const index = this.todos.indexOf(todo);
       if(index !== -1) {
@@ -66,6 +61,7 @@ export class AppComponent {
   save() {
     const data = JSON.stringify(this.todos);
     localStorage.setItem('todos', data);
+    this.mode='list';
   }
 
   load() {
@@ -73,6 +69,10 @@ export class AppComponent {
     if (data) {
       this.todos = JSON.parse(data);
     }
+  }
+
+  changeMode(mode:string) {
+    this.mode = mode;
   }
 }
 
