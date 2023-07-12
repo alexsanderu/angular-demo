@@ -1,5 +1,12 @@
 body {
     height: 100vh;
     background: linear-gradient(60deg, #3023ae 0%, #c86dd7 100%);
-   
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ul {
+ 
 }
