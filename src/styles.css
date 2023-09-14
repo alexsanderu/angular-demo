@@ -13,13 +13,13 @@ button {
 }
 
 ul {
-text-align: left;
-padding: 10px;
-list-style: none;
-background: white;
-border-radius: 10px;
--webkit-box-shadow: 3p 4px 14px 0px rgba(0, 0, 0, 0.39);
-box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+    text-align: left;
+    padding: 10px;
+    list-style: none;
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 3p 4px 14px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
 }
 
 li {
@@ -56,16 +56,16 @@ li>button:hover {
 }
 
 .button {
-background-color: #0000003f;
-text-align: center;
-border: none;
-padding: 5px;
-color: white;
-border-radius: 10px;
-font-size: 1em;
-font-weight: 100;
-padding-left: 50px;
-padding-right:50px;
+    background-color: #0000003f;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 100;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 #modal {
@@ -85,20 +85,20 @@ input {
 }
 
 .danger {
-color: red;
-font-weight: bold;
+    color: red;
+    font-weight: bold;
 }
 
 .addbutton {
     background-color: #0000003f;
-text-align: center;
-border: none;
-padding: 5px;
-color: white;
-border-radius: 10px;
-font-size: 1em;
-font-weight: 100;
-padding-left: 50px;
-padding-right:50px;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 100;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
